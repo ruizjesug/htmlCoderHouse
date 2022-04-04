@@ -1,0 +1,154 @@
+body{
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	color: #333;
+	font-size: 1.0rem;
+	line-height: 1.1rem;
+	margin: 0;
+	line-height: 1.3rem;
+}
+
+h1{
+	line-height: 1.3em;
+	font-size: 1.3em;
+}
+.container {
+	width: 85%;
+	max-width: 850px;
+	margin: 0 auto;
+}
+
+.header{
+	background: #333;
+	color: white;
+	padding: 2rem 0;
+
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+}
+
+.header a{
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+}
+.logo-nav-container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.logo{
+	letter-spacing: 8px;
+	font-size: 1.3em;
+}
+
+.menu-icon{
+	display: none;
+}
+
+.navigation ul{
+	margin: 0%;
+	padding: 0%;
+	list-style: none;
+}
+
+	.navigation ul li{
+	display: inline-block;
+	}
+		.navigation ul li a{
+			display: block;
+			padding: 0.5rem 1rem;
+			transition: all 0.4s linear;
+			border-radius: 5px;
+		}
+			.navigation ul li a:hover{
+				background: rgb(126, 126, 126);
+			}
+
+.main{
+	padding-top: 12rem;
+}
+
+.footer{
+	background: #f2f2f2;
+	padding: 4rem 0;
+	text-align: center;
+
+}
+
+.grid-container{
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	grid-template-rows: 400px;
+	justify-content: space-between auto;
+	
+	
+}
+
+.grid-container div{
+
+	background-color: #EDEDF1;
+	text-align: center;
+	color: black;
+	border: 5px solid white;
+	display: flex;
+	justify-content: center;
+	border-radius: 20px;
+}
+
+.categoria1:hover{
+	
+	filter: opacity(0.9);
+  transform: scale(1.04);
+}
+
+.categoria2:hover{
+
+	filter: opacity(0.9);
+  transform: scale(1.04);
+}
+
+.categoria3:hover{
+
+	filter: opacity(0.9);
+  transform: scale(1.04);
+}
+
+.categoria4:hover{
+
+	filter: opacity(0.9);
+  transform: scale(1.04);
+@media only screen and (max-width: 767px) {
+
+.menu-icon{
+	display: block;
+	cursor: pointer;
+	padding: 0.5rem 1rem;
+}
+	.navigation{
+	width: 100%;
+	margin-top: 1rem;
+}
+		.navigation ul{
+			display: none;
+		}
+
+		.navigation ul.show{
+			display: block;
+		}
+			.navigation ul li{
+			display: block;
+			}
+				.navigation ul li a{
+					display: block;
+					padding: 0.5rem 0;
+					transition: all 0.4s linear;
+					border-radius: 5px;
+				}
+					.navigation ul li a:hover{
+						background: rgb(126, 126, 126);
+					}
+
+}
