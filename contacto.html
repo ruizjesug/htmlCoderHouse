@@ -9,6 +9,7 @@
 </head>
 <body>
     <header class="header">
+        
         <div class="container logo-nav-container">
             <a href="#" class="logo">SUBLIMEDITION</a>
             <span class="menu-icon">Ver menú</span>
@@ -23,16 +24,21 @@
             </nav>
     </header>
 
+        
     <main class="main">    
 
-        <div class="container">
-          <h1>Contactanos</h1>
-            <p>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates et, 
-               reprehenderit, atque amet omnis magni molestiae fugit mollitia eius quam, 
-               dolorum vero odit non! Consequatur, quos? Accusamus labore porro numquam.
-           </p>
-        </div>
+        <form class="form" action="https://formspree.io/f/mlezwvpg"
+        method="POST">
+            <div class="form_container">
+                <h2 class="form_title">Contáctame</h2>
+                <input type="text" class="form_input" placeholder="Nombre" name="name">
+                <input type="email" class="form_input" placeholder="Email" name="email">
+                <textarea class="form_input form_input--message" placeholder="Mensaje:" name="message"></textarea>
+                
+                <input type="submit" value="Enviar" class="form_cta"> 
+            </div>
+
+    </form>
 
     </main>
 
