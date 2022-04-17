@@ -5,24 +5,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="style.css">
-    
+ 
     <!-- Bootstrap CSS -->
     <link href="css/estilos.css" rel="stylesheet">
 
 
-    <title>Sublimedition</title>
+    <title>Sublimedition - Bienvenido</title>
 </head>
 <body>
 
+    <!-- ENCABEZADO -->
 
-        <!--Inicio Header-->
-    <header class="header">
-        <div class="container logo-nav-container">
-            <a href="#" class="logo">SE.</a>
-            <span class="menu-icon">Ver menú</span>
-            <nav class="navigation">
+    <header class="container-fluid bg-secondary d-flex justify-content-center">
+        <p class="text-light mb-0 p-2 ">Contactanos 11 3582 0242</p>
+    </header>
+
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Sublimedition</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Catalogo">Catalogo</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Productos
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Tazas</a></li>
+                  <li><a class="dropdown-item" href="#">Remeras</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Accesorios</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+
+
+
                 <ul>
                     <li><a href="#">Inicio</a></li>
                     <li><a href="#catalogo">Catalogo</a></li>
@@ -30,40 +66,8 @@
                     <li><a href="#clientes.html">Clientes</a></li>
                     <li><a href="#contacto.html">Contacto</a></li>
                 </ul>
-            </nav>
-    </header>
-        <!--Final Header-->
 
 
-   
-          <!-- Inicio Container categorias-->
-    <main class="main">    
-
-        <div class="container">
-          <h1>Inicio</h1>
-            
-        <div class="grid-container">
-            <div class="categoria1">
-                <img src="/Img/tazas-categoria.png" alt="">
-            </div>
-            
-            <div class="categoria2">
-                <img src="/Img/remera-negra.png" alt="no se cargo correctamente la imagen">
-            </div>
-            
-            <div class="categoria3">
-                <img src="/Img/camperas.png" alt="">
-            </div>
-
-            <div class="categoria4">
-                <img src="/Img/viceras-blanca.png" alt="" >
-            </div>
-        </div>
-        <!-- final Container categorias-->
-    
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, id!</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint assumenda numquam beatae earum eos facilis rerum iure? Aliquid beatae optio magnam maxime enim, aliquam odit eum numquam libero vero natus.</p>
-    </main>
 
     <footer class="footer">
         <div class="container">
@@ -77,8 +81,7 @@
     </footer>
     
     <script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="scripts.js"></script>
+  
     
 
 </body>
